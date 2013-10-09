@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "dependencies": {
         "jquery": "~2.0.2",
-        "angular": "~2.6.1",
+        "angular": "",
         "requirejs": "~2.1.6",
         "bootstrap": ""
     }
