@@ -3,13 +3,5 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h2>Books</h2>
-<div>
-    <div ng-controller="BooksController">
-        <ul>
-            <li ng-repeat="book in books">
-                {{book.name}}
-            </li>
-        </ul>
-    </div>
-</div>
+<div ng-view></div>
+

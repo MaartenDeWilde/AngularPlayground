@@ -12,6 +12,6 @@ require.config({
     }
 });
 
-require(['angular', 'app', 'controllers/booksController'], function (angular) {
+require(['angular', 'app', 'router'], function (angular) {
     angular.bootstrap(document, ['playground']);
 });
