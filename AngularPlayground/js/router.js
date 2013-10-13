@@ -1,4 +1,4 @@
-﻿define(['app','controllers/booksController', 'controllers/newBookController'], function (app, c1) {
+﻿define(['app','controllers/booksController', 'controllers/newBookController'], function (app, c1,c2) {
     app.config(['$routeProvider',
       function ($routeProvider) {
           $routeProvider.

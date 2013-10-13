@@ -4,6 +4,7 @@
     "dependencies": {
         "jquery": "~2.0.2",
         "angular": "",
+		"angular-route":"",
         "requirejs": "~2.1.6",
         "bootstrap": ""
     }

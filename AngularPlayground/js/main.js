@@ -3,11 +3,15 @@
 
 require.config({
     paths: {
-        angular: '../components/angular/angular'
+        angular: '../components/angular/angular',
+        angularroute : '../components/angular-route/angular-route'
     },
     shim: {
         angular: {
             exports: 'angular'
+        },
+        angularroute: {
+            deps: ['angular']
         }
     }
 });

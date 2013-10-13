@@ -116,6 +116,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="components\angular-route\angular-route.js" />
+    <Content Include="components\angular-route\angular-route.min.js" />
     <Content Include="components\angular\angular.js" />
     <Content Include="components\angular\angular.min.js" />
     <Content Include="components\bootstrap\assets\css\docs.css" />
@@ -977,6 +979,11 @@
     <Content Include="components\requirejs\tests\toUrl\sub\noext" />
     <Content Include="components\requirejs\updatesubs.sh" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="components\angular-route\angular-route.min.js.map" />
+    <Content Include="components\angular-route\bower.json" />
+    <Content Include="components\angular-route\component.json" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -993,7 +1000,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>49941</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:49264/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

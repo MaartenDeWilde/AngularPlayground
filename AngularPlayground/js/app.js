@@ -1,6 +1,6 @@
 ﻿/*global define*/
 'use strict';
 
-define(['angular'], function (angular) {
-    return angular.module('playground', []);
+define(['angular', 'angularroute'], function (angular) {
+    return angular.module('playground', ['ngRoute']);
 });
