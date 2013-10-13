@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 
 namespace AngularPlayground.Controllers
 {
     public class BooksController : ApiController
     {
-        [HttpGet]
-        public List<Book> GetAll()
+        public BooksController()
         {
-            return new List<Book>{
+            if (HttpContext.Current.Application["books"] == null)
+            {
+                HttpContext.Current.Application["books"] = new List<Book>{
                 new Book{
                     Name = "Lord of the rings: The return of the king",
                     Author = "J.R.R. Tolkien"
@@ -21,16 +23,23 @@ namespace AngularPlayground.Controllers
                 new Book{
                     Name = "1984",
                     Author = "George Orwel"
-                }
-            };
+                }};
+            }
+        }
+
+
+        [HttpGet]
+        public List<Book> GetAll()
+        {
+            return (List<Book>)HttpContext.Current.Application["books"];
         }
 
         [HttpPost]
         public void Save(Book book)
         {
-
+            ((List<Book>)HttpContext.Current.Application["books"]).Add(book);
         }
     }
 
-    
+
 }
