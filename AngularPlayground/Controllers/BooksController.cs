@@ -24,6 +24,12 @@ namespace AngularPlayground.Controllers
                 }
             };
         }
+
+        [HttpPost]
+        public void Save(Book book)
+        {
+
+        }
     }
 
     

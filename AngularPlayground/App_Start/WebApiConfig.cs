@@ -19,6 +19,11 @@ namespace AngularPlayground
                                        routeTemplate: "api/books/all",
                                        defaults: new { controller = "Books", action = "GetAll" }
                 );
+            config.Routes.MapHttpRoute(
+                                    name: "Save Book",
+                                    routeTemplate: "api/books/new",
+                                    defaults: new { controller = "Books", action = "Save" }
+             );
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

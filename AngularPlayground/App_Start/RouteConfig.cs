@@ -23,12 +23,13 @@ namespace AngularPlayground
                 name: "Books",
                 url: "books",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            );          
+
             routes.MapRoute(
-                name: "NewBooks",
-                url: "books/add",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+               name: "NewBooks",
+               url: "books/add",
+               defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+           );
         }
     }
 }

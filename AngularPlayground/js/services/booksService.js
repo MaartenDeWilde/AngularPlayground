@@ -8,8 +8,8 @@ define(['app'], function (app) {
                     callback(data);
                 });
             },
-            put : function(){
-
+            put : function(book){
+                $http({ method: 'POST', url: '/api/books/new', data:book });
             }
         };
     });
