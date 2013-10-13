@@ -3,8 +3,10 @@
 define(['app'], function (app) {
     app.factory('bookService', function($http){
         return {
-            get: function(){
-                return [ {name:"Awesome book"}, {name:'IT book'}];
+            get: function (callback) {
+                $http({ method: 'GET', url: '/api/books/all' }).success(function (data) {
+                    callback(data);
+                });
             },
             put : function(){
 
