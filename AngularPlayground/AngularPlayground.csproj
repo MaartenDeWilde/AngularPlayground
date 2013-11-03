@@ -853,6 +853,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="js\directives\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>

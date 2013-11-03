@@ -13,7 +13,8 @@ require.config({
         angularroute: {
             deps: ['angular']
         }
-    }
+    },
+    deps: ['directives/hover']
 });
 
 require(['angular', 'app', 'router'], function (angular) {
